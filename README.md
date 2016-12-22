@@ -1,2 +1,1 @@
-## Project files.
-## Code Conventions.
+## Code Conventions
