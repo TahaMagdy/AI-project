@@ -1,2 +1,2 @@
-# AI-project
-Subtract a Square Game
+## Project files.
+## Code Conventions.
