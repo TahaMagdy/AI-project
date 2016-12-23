@@ -8,6 +8,7 @@
   a *Function*.
 * **For Allah** You have to write a *comment line* before every line of code
   you write.
+  
     **Function Example:**
     ```python
     def fooWord ( argu1, argu2, ... ):
