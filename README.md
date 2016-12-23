@@ -25,7 +25,7 @@
     # End fooWord() 
     ```
     
-    **Function Example:**
+    **Class Example:**
     ```python
     class ClassName:
     '''
