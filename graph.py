@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 
 class Vertex:  
+    '''
+        * Vertex contains the vertex children as a list.
+        * Vertex contains information bout a vertex.
+    '''
     def __init__(self, currentNumber):
         self.currentNumber = currentNumber
         self.children      = []
