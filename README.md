@@ -38,7 +38,7 @@
     # End ClassName
     ```
 
-> This help everyone to read and maintain the code **even when you're maintain
+> This helps everyone to read and maintain the code **even when you're maintain
 > someone else code**
 
 ## Game Rules:
