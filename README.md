@@ -41,7 +41,7 @@
 * Always write a *multi-line comment* to test you code.
 * Do **NOT** push until you're sure the code is well-tested.
 
-> This helps everyone to read and maintain the code **even when you're maintain someone else code**
+> This helps everyone to read and maintain the code **even when you're maintaining someone else code**
 
 ## Game Rules:
 * It is a *two-player* game.
