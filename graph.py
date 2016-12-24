@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import operator
 
 class Vertex:  
     '''
@@ -47,9 +48,14 @@ class Graph:
         '''
             This Initilzes the state space graph with currentNumber.
         '''
+        # List of vertices [Graph]
+        self.stateSpaceGraph = []
         # Making a Vertex for the currentNumber 
         if isinstance(currentNumber, int): # making sure of the type int.
+            # Making the starting number the graph ROOT
             self.root = Vertex ( currentNumber )
+            # Adding the root to the [Graph]
+            self.stateSpaceGraph.append ( self.root )
             '''
             # Testing the Graph constructor 
             print ( root.currentNumber )
@@ -68,7 +74,17 @@ class Graph:
             children = []
             i = 1
             while i*i < vertex.currentNumber:
-                children.append ( Vertex (vertex.currentNumber - i*i) )
+                # Making Vertex for the new child
+                newChild       = Vertex ( vertex.currentNumber - i*i )
+                # Updating the level
+                newChild.level = vertex.level + 1
+                # Adding new child to the vertex children list
+                children.append             ( newChild )
+                # Adding children as  state in the [Graph]
+                self.stateSpaceGraph.append ( newChild )
+                # Sorting the graph/list based on the currentNumber attribute 
+                self.stateSpaceGraph.sort(key = operator.attrgetter('currentNumber'), reverse=True )
+                # The next square to be subtract 
                 i += 1
             '''
             # Testing
@@ -85,11 +101,19 @@ class Graph:
 
 '''
 # Testing the graph class
-graph = Graph (  12  )
+graph = Graph ( 20 )
 print ( "The Root is: " ,  graph.root.currentNumber)
-ls = graph.generateChildren ( Vertex ( 12 ) )
+ls = graph.generateChildren ( Vertex ( 20 ) )
+
+# Testing generateChildren()
 i = 0
 while i < len(ls):
-    print ( ls[i].currentNumber )
+#    print ( ls[i].currentNumber )
     i += 1
+
+# Testing State Space Graph
+j = 0
+while j < len(graph.stateSpaceGraph):
+    print ( graph.stateSpaceGraph[j].currentNumber , graph.stateSpaceGraph[j].level )
+    j += 1
 '''
