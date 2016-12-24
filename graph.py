@@ -46,7 +46,8 @@ class Graph:
     '''
     def __init__(self, currentNumber):
         '''
-            This Initilzes the state space graph with currentNumber.
+            This Initilzes the state space graph with the starting Number,
+            And it adds the root to the [Graph]
         '''
         # List of vertices [Graph]
         self.stateSpaceGraph = []
@@ -73,7 +74,7 @@ class Graph:
         if isinstance(vertex, Vertex): # making sure of the type Vertex.
             children = []
             i = 1
-            while i*i < vertex.currentNumber:
+            while i*i <= vertex.currentNumber:
                 # Making Vertex for the new child
                 newChild       = Vertex ( vertex.currentNumber - i*i )
                 # Updating the level
