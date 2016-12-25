@@ -2,7 +2,7 @@
 
 * **Class Name** starts with *uppercase* and every new word is *capitalized*
   i.e *"Vertex, NewClass, ..."*.
-* **Function Name** starts with *lowercase* and ever new word is *capitalized*
+* **Function Name** starts with *lowercase* and every new word is *capitalized*
   i.e *"foo, fooName, ..."*.
 * **Comments:** You must write a **description** before defining a *Class* or
   a *Function*.
