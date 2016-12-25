@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 import operator
 
+'''
+    The graph tools and the Algorithms
+'''
+
 class Vertex:  
     '''
         * Vertex contains the vertex children as a list.
