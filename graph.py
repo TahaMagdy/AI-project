@@ -67,8 +67,10 @@ class Graph:
 
     def generateChildren ( self, vertex ):
         '''
-            This funciotn take a vertex
-            and returns its children list.
+            * This funciotn take a vertex
+              and returns its children list.
+
+            * It add the new children to the stateSpaceGraph [graph]
         '''
         # Making the children list of vertex.
         if isinstance(vertex, Vertex): # making sure of the type Vertex.
@@ -97,6 +99,14 @@ class Graph:
             return children
 # end generateChildren()
 
+    def generateStates (self):
+        '''
+            It fills up the graph with all the game states.
+        '''
+        for state in self.stateSpaceGraph: 
+            self.generateChildren ( state )
+
+
 
 # end class graph
 
@@ -112,7 +122,16 @@ while i < len(ls):
 #    print ( ls[i].currentNumber )
     i += 1
 
-# Testing State Space Graph
+# Testing State Space Graph -- Before generaing all states/nodes.
+j = 0
+#while j < len(graph.stateSpaceGraph):
+#   print ( graph.stateSpaceGraph[j].currentNumber , graph.stateSpaceGraph[j].level )
+#    j += 1
+
+# Testing Generating the hole graph
+graph.generateStates()
+
+# Testing State Space Graph -- After generating all nodes.
 j = 0
 while j < len(graph.stateSpaceGraph):
     print ( graph.stateSpaceGraph[j].currentNumber , graph.stateSpaceGraph[j].level )
