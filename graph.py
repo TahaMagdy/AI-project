@@ -105,6 +105,7 @@ class Graph:
         '''
         for state in self.stateSpaceGraph: 
             self.generateChildren ( state )
+# end generateStates()
 
 
 
