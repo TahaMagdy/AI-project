@@ -115,11 +115,11 @@ class Graph:
 
 # end class graph
 
-'''
+
 # Testing the graph class
-graph = Graph ( 20 )
+graph = Graph ( 5 )
 print ( "The Root is: " ,  graph.root.currentNumber)
-ls = graph.generateChildren ( Vertex ( 20 ) )
+ls = graph.generateChildren ( Vertex ( 5 ) )
 
 # Testing generateChildren()
 i = 0
@@ -141,4 +141,4 @@ j = 0
 while j < len(graph.stateSpaceGraph):
     print ( graph.stateSpaceGraph[j].currentNumber , graph.stateSpaceGraph[j].level )
     j += 1
-'''
+
