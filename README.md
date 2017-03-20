@@ -33,13 +33,14 @@ public void firstSecond ( argu1, argu2, ... ) {
     
 ## Class example:
 ```java
-public class myClass {
 /**
  * Describe the class
  * Tell about any 
  * ...
  * etc
 **/
+public class myClass {
+
 
 } // end class myClass
 ```
