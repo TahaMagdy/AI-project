@@ -1,9 +1,9 @@
 ##  Code Conventions
 
 * **Class Name** starts with *uppercase* and every new word is *capitalized*
-  i.e *"Vertex, NewClass, ..."*.
+  i.e *`Vertex, NewClass, ...`*.
 * **Function Name** starts with *lowercase* and every new word is *capitalized*
-  i.e *"foo, fooName, ..."*.
+  i.e *`foo, fooName, ...`*.
 * **Comments:** You must write a **description** before defining a *Class* or
   a *Function*.
 * **For Allah** You have to write a *comment line* before every line of code
