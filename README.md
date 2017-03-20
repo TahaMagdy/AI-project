@@ -8,44 +8,43 @@
   a *Function*.
 * **For Allah** You have to write a *comment line* before every line of code
   you write.
-  
-    **Function Example:**
-    ```python
-    def fooWord ( argu1, argu2, ... ):
-    '''
-        * Describe the arguments.
-        * Describe what fooWord() does.
-        * You Must put # End fooWord() at the end of the function.
-    '''
-        # Comment line for the next line of code
-        print "Write your code"
-        .
-        .
-        .
-    # End fooWord() 
-    ```
-    
-    **Class Example:**
-    ```python
-    class ClassName:
-    '''
-        * Class Description.
-        * put # End ClassName at the end of the class.
-    '''
-        # Class Member Definitions
-        .
-        .
-        .
-    # End ClassName
-    ```
+* We use **Spaces** not **Tabs**, `1Tab = 4Spaces`.
 * Always write a *multi-line comment* to test you code.
-* Do **NOT** push until you're sure the code is well-tested.
+* A line **Must not** be more than 80 column.
+
+
+## Fucntion example:
+```java
+/**
+ * Describe what fooWord() does.
+ * Describe the arguments.
+ * Preconditions.
+ * PostConditions.
+**/
+public void firstSecond ( argu1, argu2, ... ) {
+
+    // What does the next line do.
+    int x = 1 + 2
+    .
+    .
+    .
+} // end fooWord()
+```
+    
+## Class example:
+```java
+public class myClass {
+/**
+ * Describe the class
+ * Tell about any 
+ * ...
+ * etc
+**/
+
+} // end class myClass
+```
+
+* Any control statment `if, while, for, ...` follows this pattern of functions (Multi-comment before it, comment after the end curly brace, comment before any line)
+
 
 > This helps everyone to read and maintain the code **even when you're maintaining someone else code**
-
-## Game Rules:
-* It is a *two-player* game.
-* The game starts with an Integer number.
-* Both players should subtract X from the starting number.
-* **X is non-zero positive square integer less than or equal the current number.**
-* *Last person* who can make a subtraction wins.
