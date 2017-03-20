@@ -45,7 +45,7 @@ public class myClass {
 } // end class myClass
 ```
 
-* Any control statment `if, while, for, ...` follows this pattern of functions (Multi-comment before it, comment after the end curly brace, comment before any line)
+* Any control statment `if, while, for, ...` follows this pattern (Multi-comment before it, comment after the end curly brace, comment before any line)
 
 
 > This helps everyone to read and maintain the code **even when you're maintaining someone else code**
